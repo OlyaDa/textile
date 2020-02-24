@@ -3,7 +3,7 @@ $caption_text: Cera Pro, sans-serif;
 
 @import "header";
 @import "banner";
-@import "customers";
+@import "why";
 @import "venecja";
 @import "murano";
 @import "ferrara";
@@ -13,7 +13,7 @@ $caption_text: Cera Pro, sans-serif;
 @import "office";
 @import "certificates";
 @import "water";
-@import "roof";
+@import "departure";
 @import "choice";
 @import "reviews";
 @import "footer";
@@ -55,11 +55,11 @@ $caption_text: Cera Pro, sans-serif;
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../public/fonts/icomoon.eot?31g4lx');
-  src:  url('../../public/fonts/icomoon.eot?31g4lx#iefix') format('embedded-opentype'),
-  url('../../public/fonts/icomoon.ttf?31g4lx') format('truetype'),
-  url('../../public/fonts/icomoon.woff?31g4lx') format('woff'),
-  url('../../public/fonts/icomoon.svg?31g4lx#icomoon') format('svg');
+  src:  url('../../public/fonts/icomoon.eot?swwh5a');
+  src:  url('../../public/fonts/icomoon.eot?swwh5a#iefix') format('embedded-opentype'),
+  url('../../public/fonts/icomoon.ttf?swwh5a') format('truetype'),
+  url('../../public/fonts/icomoon.woff?swwh5a') format('woff'),
+  url('../../public/fonts/icomoon.svg?swwh5a#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -80,58 +80,71 @@ $caption_text: Cera Pro, sans-serif;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-box1:before {
-  content: "\e900";
-  color: #ed1d24;
-}
-.icon-box2:before {
-  content: "\e901";
-  color: #ed1d24;
-}
-.icon-call:before {
+.icon-arrow:before {
   content: "\e902";
+  color: #fff;
 }
-.icon-call2:before {
+.icon-arrow2:before {
   content: "\e903";
 }
-.icon-clock2:before {
+.icon-carnize:before {
   content: "\e904";
-  color: #ed1d24;
+  color: #fff;
 }
 .icon-facebook:before {
   content: "\e905";
-}
-.icon-house:before {
-  content: "\e906";
-  color: #ed1d24;
+  color: #d4ac89;
 }
 .icon-instagram:before {
+  content: "\e906";
+}
+.icon-left:before {
   content: "\e907";
+  font-size: 26px;
 }
-.icon-map:before {
+.icon-phone:before {
   content: "\e908";
+  color: #fff;
 }
-.icon-roof:before {
+.icon-podhod:before {
   content: "\e909";
-  color: #ed1d24;
+  color: #34447b;
+  font-size: 74px;
 }
-.icon-truck:before {
+.icon-right:before {
   content: "\e90a";
-  color: #ed1d24;
+  font-size: 26px;
 }
-.icon-wall-clock:before {
+.icon-roll:before {
   content: "\e90b";
+  color: #34447b;
+  font-size: 74px;
 }
-.icon-warranty:before {
+.icon-sew:before {
   content: "\e90c";
-  color: #ed1d24;
+  color: #fff;
 }
-.icon-water:before {
+.icon-sewing-machine:before {
   content: "\e90d";
-  color: #ed1d24;
+  color: #34447b;
+  font-size: 74px;
 }
-.icon-youtube:before {
+.icon-stirka:before {
   content: "\e90e";
+  color: #fff;
+}
+.icon-team:before {
+  content: "\e90f";
+  color: #34447b;
+  font-size: 74px;
+}
+.icon-telegram1:before {
+  content: "\e910";
+  color: #fff;
+}
+.icon-viber1:before {
+  content: "\e911";
+  color: #fff;
 }
 
 * {
@@ -144,7 +157,7 @@ body {
   font-weight: normal;
   background-color: #fff;
 
-  .btn:hover, .btn:focus, .btn:active, .btn:visited, .btn:focus-within {
+  .btn:focus, .btn:active, .btn:visited, .btn:focus-within {
     outline: none !important;
     box-shadow: none !important;
   }
@@ -154,7 +167,7 @@ body {
     box-shadow: none !important;
   }
 
-  .button:hover, .button:focus, .button:active, .button:visited, .button:focus-within {
+  .button:focus, .button:active, .button:visited, .button:focus-within {
     outline: none !important;
     box-shadow: none !important;
   }

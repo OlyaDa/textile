@@ -32,105 +32,24 @@ $(document).ready(function() {
             $('.toggle-menu').removeClass('menu-on');
         });
 
-        $('.cls').click(function () {
+        $('.content').click(function () {
             $('.mobile-menu').removeClass('show');
             $('.toggle-menu').removeClass('menu-on');
         });
     });
 });
 
-//slider for "rialto"
+//slider for "why"
 
-$('.slider-for2').slick({
+$('.why-slider').slick({
     slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    fade: true,
-    asNavFor: '.slider-nav2',
-    infinite: true,
-});
-
-$('.slider-nav2').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for2',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-    arrows: false,
-    infinite: true,
-});
-
-
-//slider for "office"
-
-$('.slider-for').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    fade: true,
-    asNavFor: '.slider-nav'
-});
-
-$('.slider-nav').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    asNavFor: '.slider-for',
-    dots: false,
-    centerMode: false,
-    focusOnSelect: true,
-    arrows: false,
-});
-
-//slider for "soffits"
-
-$('.soffits-slider').slick({
-    slidesToShow: 4,
     slidesToScroll: 1,
     infinite: true,
     arrows: true,
     dots: false,
     autoplay: false,
-    speed: 1000,
-    centerMode: true,
-    centerPadding: '0px',
-    prevArrow:'<button class="slick-arrow slick-prev"> <i class="fas fa-long-arrow-alt-left"></i> </button>',
-    nextArrow:'<button class="slick-arrow slick-next"> <i class="fas fa-long-arrow-alt-right"></i> </button>',
-    responsive: [
-        {
-            breakpoint: 993,
-            settings: {
-                slidesToShow: 3,
-            }
-        },
-
-        {
-            breakpoint: 769,
-            settings: {
-                slidesToShow: 3,
-                arrows: false,
-            }
-        },
-
-        {
-            breakpoint: 701,
-            settings: {
-                slidesToShow: 2,
-                arrows: false,
-            }
-        },
-
-        {
-            breakpoint: 400,
-            settings: {
-                slidesToShow: 1,
-                arrows: false,
-                autoplay: false,
-            }
-        },
-    ]
+    prevArrow:'<button class="slick-arrow slick-prev"> <span class="icon-left"></span> </button>',
+    nextArrow:'<button class="slick-arrow slick-next"> <span class="icon-right"></span> </button>',
 });
 
 //slider for "reviews"
