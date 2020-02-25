@@ -1,3 +1,7 @@
+.color {
+  background: #fff !important;
+}
+
 .header {
   background-color: transparent;
   padding: 26px 0;
@@ -92,7 +96,7 @@
     bottom: 0;
     transition: all .3s ease-in-out;
     max-width: 50vw;
-    right: -100%;
+    right: -300%;
     min-height: 100vh;
     background: #ffffff;
     opacity: 0;

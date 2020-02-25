@@ -1,0 +1,218 @@
+.services {
+  padding-top: 104px;
+  padding-bottom: 79px;
+  background: url("../../public/images/bg-services.png") top left no-repeat;
+  background-size: cover;
+  h4 {
+    font-family: 'Oranienbaum', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 146.5%;
+    text-align: center;
+    color: #202020;
+    margin-bottom: 74px;
+  }
+
+  .services-inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  .item {
+    border-radius: 5px;
+    margin: 4px;
+  }
+
+  .cls {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    width: 250px;
+    height: 442px;
+    padding: 30px 22px 40px 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .text {
+      h6 {
+        font-family: 'Oranienbaum', serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 22px;
+        line-height: 146.5%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 25px;
+      }
+
+      p {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 146.5%;
+        color: #FFFFFF;
+        margin: 0;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #D4AC89;
+      border: none;
+    }
+
+    .icon-right:before {
+      font-size: 18px;
+      color: #202020;
+    }
+  }
+
+  .active {
+    width: 517px;
+    .image {
+      position: relative;
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+    }
+
+    .overlay {
+      border-radius: 5px;
+      background: linear-gradient(180deg, rgba(32, 32, 32, 0) 16.94%, #202020 100%);
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding: 37px 37px 40px 37px;
+    }
+
+    h6 {
+      font-family: 'Oranienbaum', serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 146.5%;
+      text-transform: uppercase;
+      color: #D4AC89;
+    }
+
+    .text {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: 37px;
+      right: 37px;
+      bottom: 40px;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 146.5%;
+      color: #FFFFFF;
+      width: 372px;
+      margin: 0;
+    }
+
+    button {
+      cursor: pointer;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #D4AC89;
+      border: none;
+    }
+
+    .icon-right:before {
+      font-size: 18px;
+      color: #202020;
+    }
+  }
+
+  //media
+
+  @media (max-width: 1295px) {
+    .active {
+      display: flex !important;
+      width: 100%;
+
+      button {
+        display: none;
+      }
+    }
+    .cls {
+      display: none !important;
+    }
+
+    .item {
+      background: transparent !important;
+      margin-bottom: 30px;
+    }
+
+    .services-inner {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h4 {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 38px;
+      line-height: 115.5%;
+      margin-bottom: 20px;
+    }
+
+    .item {
+      margin-bottom: 20px;
+    }
+
+    .holder {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  @media (max-width: 510px) {
+    .active h6 {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 26px;
+      line-height: 115.5%;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .active {
+      .overlay {
+        background: linear-gradient(180deg, rgba(32, 32, 32, 0.2) -5%, #202020 100%);
+      }
+    }
+  }
+
+}

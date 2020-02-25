@@ -1,114 +1,59 @@
-//////////////////////////REVIEWS BEGIN////////////////////////
-$font_text: 'Montserrat', sans-serif;
-
 .reviews {
-  padding: 83px 0 32px 0;
-  background: #08203E;
-  overflow: hidden;
+  padding-top: 61px;
+  padding-bottom: 213px;
 
-  strong {
-    font-family: "Open Sans", sans-serif;
+  h4 {
+    font-family: 'Oranienbaum', serif;
     font-style: normal;
-    font-weight: bold;
-    font-size: 288px;
-    line-height: 147.69%;
-    text-align: right;
-    color: rgba(237, 29, 36, 0.2);
-    position: absolute;
-    top: -358px;
-    left: -3px;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 146.5%;
+    color: #202020;
+    text-align: center;
+    margin-bottom: 35px;
   }
 
-  .right-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-
-    .caption {
-      font-family: $font_text;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 30px;
-      line-height: 147.69%;
-      text-align: right;
-      text-transform: uppercase;
-      margin-top: 77px;
-      color: #FFFFFF;
-    }
-
-    .budmat {
-      font-family: $font_text;
-      font-style: normal;
-      font-weight: 900;
-      font-size: 54px;
-      line-height: 102.69%;
-      color: rgba(237, 29, 36, 0.9);
-      margin: 0;
-      text-align: right;
-      span {
-        color: rgba(240, 240, 240, 0.9);
-        margin-left: -15px;
-      }
-    }
-  }
-
-  .reviews-card {
-    padding: 0 23px 0 23px;
+  .item {
+    display: block;
     background: #FFFFFF;
-    max-width: 315px;
-    height: 100%;
-    position: relative;
-    margin-right: 26px;
-    margin-left: 26px;
-    margin-bottom: 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 298px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 36px 30px 25px 38px;
+    margin: 45px 30px;
 
-    .reviews-title {
-      display: flex;
-      align-items: center;
-      flex-direction: row;
+    p {
+      font-family: 'Lato', sans-serif;
+      font-style: italic;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 151.4%;
+      color: #242424;
     }
 
     .image {
-      max-width: 54px;
-      max-height: 54px;
-      margin-right: 16px;
+      margin-right: 12px;
+      width: 69px;
+      height: 69px;
     }
 
-    .reviews-text {
-      font-family: $font_text;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 13px;
-      line-height: 18px;
-      color: #242424;
-      max-width: 276px;
-      margin: 0;
+    .top {
+      display: flex;
+      align-items: center;
+      margin-bottom: 30px;
     }
 
     .title {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-
-    .name {
-      font-family: $font_text;
+      font-family: 'Lato', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 16px;
-      line-height: 137.9%;
-      text-align: left;
+      line-height: 19px;
       color: #242424;
-      margin-bottom: 0;
+      margin-bottom: 8px;
     }
 
     .town {
-      font-family: "Open Sans", sans-serif;
+      font-family: 'Lato', sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 14px;
@@ -116,168 +61,193 @@ $font_text: 'Montserrat', sans-serif;
       color: #242424;
       margin-bottom: 0;
     }
-
   }
 
   ///slick-prev slick-next
-
   .slick-prev:before, .slick-next:before {
-    font-size: 1px;
+    font-size: 0;
   }
 
   .slick-prev.slick-arrow {
-    right: -75px;
-    top: 178px;
+    left: 43%;
   }
 
   .slick-next {
-    right: -120px;
-    top: 178px;
-    border-left: 1px solid #D8D8D8;
+    right: 43%;
   }
 
   .slick-prev, .slick-next {
+    bottom: -32%;
     font-size: 16px;
     line-height: 0;
     position: absolute;
-    display: block;
-    width: 46px;
-    height: 46px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
     padding: 0;
     transform: translate(0, -50%);
     cursor: pointer;
-    color: #353535;;
-    border-right: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
+    color: #202020;;
     outline: none;
-    background: #fff;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+      content: "";
+      height: 61px;
+      width: 61px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid #D4AC89;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
   }
 
   .slick-prev:active, .slick-next:active {
-    color: #ffffff;
-    border: 1px solid #fff;
-    background: transparent;
+    color: #827676;
   }
-  ///slick-prev slick-next end
 
+  .slick-center {
+    transition: .3s;
+    transform: scale(1.1);
+    z-index: 2;
+  }
 
+  .reviews-slider {
+    outline: none!important;
+  }
 
-  ///media
+  //media
 
-  @media (max-width: 1060px) {
-    .reviews-card {
-      margin: 35px 15px 35px 15px;
+  @media (max-width: 1140px) {
+    .slick-prev.slick-arrow {
+      left: 41%;
+    }
+
+    .slick-next {
+      right: 41%;
     }
   }
 
   @media (max-width: 991px) {
-    padding: 80px 0 40px 0;
+    padding: 40px 0 80px 0;
 
-    strong {
-      display: none;
+    h4 {
+      margin-bottom: -20px;
     }
 
-    .vector {
-      display: none;
-    }
-
-    .row {
-        flex-direction: column-reverse;
-      }
-
-      .right-content {
-        display: block;
-        padding: 0;
-        margin-left: auto;
-        margin-right: auto;
-
-        .budmat {
-          font-size: 50px;
-          text-align: center;
-          margin-bottom: 0;
-          margin-top: 0;
-          span {
-            margin-left: -15px;
-          }
-        }
-
-        .caption {
-          text-align: center;
-          margin-bottom: 40px;
-          margin-top: 0;
-        }
-      }
-
-    .reviews-card {
-     min-height: 330px;
+    .slick-prev, .slick-next {
+      bottom: -19%;
     }
   }
 
-  @media (max-width: 800px) {
-    .reviews-card {
-      min-height: 400px;
+  @media (max-width: 880px) {
+    .slick-prev.slick-arrow {
+      left: 39%;
+    }
+
+    .slick-next {
+      right: 39%;
     }
   }
 
   @media (max-width: 768px) {
-    padding: 40px 0 20px 0;
-    .right-content .caption {
-      margin-bottom: 20px;
-      font-size: 25px;
-      line-height: 138.18%;
+    h4 {
+      font-size: 38px;
+      line-height: 115.5%;
+    }
+  }
+
+  @media (max-width: 755px) {
+    .slick-prev.slick-arrow {
+      left: 37%;
     }
 
-    .right-content .budmat {
-      font-size: 35px;
-      span {
-        margin-left: -10px;
+    .slick-next {
+      right: 37%;
+    }
+  }
+
+  @media (max-width: 700px) {
+
+    .image {
+      margin: 0 10px;
+    }
+
+    .icon-left:before, .icon-right:before {
+      font-size: 16px;
+    }
+
+    .slick-prev, .slick-next {
+      width: 55px;
+      height: 55px;
+      &:after {
+        height: 41px;
+        width: 41px;
       }
     }
+  }
 
-    .reviews-card {
-      margin: 35px 25px 35px 25px;
+  @media (max-width: 690px) {
+    padding-bottom: 100px;
+
+    h4 {
+      margin-bottom: 10px;
+    }
+
+    .item {
+      margin: 45px;
+    }
+
+    .image {
+      margin: 0;
+    }
+
+    .slick-prev.slick-arrow {
+      left: 35%;
+    }
+
+    .slick-next {
+      right: 35%;
     }
   }
 
-  @media (max-width: 576px) {
-
-    .right-content {
-      .caption {
-        font-size: 20px;
-      }
-
-      .budmat {
-        font-size: 30px;
-      }
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 26px;
+      line-height: 115.5%;
     }
   }
 
-  @media (max-width: 530px) {
-    .reviews-card {
-      margin: 35px 20px 35px 20px;
+  @media (max-width: 450px) {
+    padding-bottom: 60px;
+
+    .item {
+      box-shadow: none;
+      margin: 0;
+    }
+
+    .slick-prev, .slick-next {
+      bottom: -18%;
     }
   }
 
-  @media (max-width: 460px) {
-    .reviews-card {
-      margin: 35px 58px 35px 58px;
+  @media (max-width: 410px) {
+    .slick-prev.slick-arrow {
+      left: 29%;
     }
-  }
 
-  @media (max-width: 430px) {
-    .reviews-card {
-      margin: 35px 42px 35px 42px;
-    }
-  }
-
-  @media (max-width: 380px) {
-    .reviews-card {
-      margin: 35px 20px 35px 20px;
+    .slick-next {
+      right: 29%;
     }
   }
 }
-
-
-//////////////////////////REVIEWS END////////////////////////

@@ -1,0 +1,107 @@
+.models {
+  background: url("../../public/images/bg-mod.png") top right no-repeat;
+  //background-size: cover;
+  background-size: 100% auto;
+  padding-top: 80px;
+  padding-bottom: 57px;
+
+  h4 {
+    font-family: 'Oranienbaum', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 146.5%;
+    text-align: center;
+    color: #202020;
+    margin-bottom: 22px;
+  }
+
+  p {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: center;
+    letter-spacing: 0.055em;
+    color: #000000;
+    margin-bottom: 80px;
+  }
+
+  .image {
+    margin-bottom: 46px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    position: relative;
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 100%);
+
+    p {
+      font-family: 'Lato', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 170.5%;
+      letter-spacing: 0.055em;
+      text-transform: uppercase;
+      text-align: left;
+      color: #202020;
+      margin: 0;
+      position: absolute;
+      left: 25px;
+      bottom: 17px;
+
+      span {
+        font-family: 'Lato', sans-serif;
+        display: block;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 170.5%;
+        letter-spacing: 0.055em;
+        text-transform: uppercase;
+        color: #202020;
+      }
+    }
+  }
+
+  //media
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 38px;
+      line-height: 115.5%;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 26px;
+      line-height: 115.5%;
+    }
+  }
+}

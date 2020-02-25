@@ -4,20 +4,19 @@ $caption_text: Cera Pro, sans-serif;
 @import "header";
 @import "banner";
 @import "why";
-@import "venecja";
-@import "murano";
-@import "ferrara";
-@import "rialto";
-@import "flamingo";
-@import "proaqua";
-@import "office";
-@import "certificates";
-@import "water";
+@import "showroom";
+@import "services";
+@import "contacts";
+@import "examples";
+@import "reviews";
+@import "consultation";
+@import "washing";
+@import "models";
 @import "departure";
 @import "choice";
-@import "reviews";
+@import "companies";
 @import "footer";
-
+@import "thanks";
 
 
 @font-face {
@@ -55,11 +54,11 @@ $caption_text: Cera Pro, sans-serif;
 
 @font-face {
   font-family: 'icomoon';
-  src:  url('../../public/fonts/icomoon.eot?swwh5a');
-  src:  url('../../public/fonts/icomoon.eot?swwh5a#iefix') format('embedded-opentype'),
-  url('../../public/fonts/icomoon.ttf?swwh5a') format('truetype'),
-  url('../../public/fonts/icomoon.woff?swwh5a') format('woff'),
-  url('../../public/fonts/icomoon.svg?swwh5a#icomoon') format('svg');
+  src:  url('../../public/fonts/icomoon.eot?j7lrok');
+  src:  url('../../public/fonts/icomoon.eot?j7lrok#iefix') format('embedded-opentype'),
+  url('../../public/fonts/icomoon.ttf?j7lrok') format('truetype'),
+  url('../../public/fonts/icomoon.woff?j7lrok') format('woff'),
+  url('../../public/fonts/icomoon.svg?j7lrok#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -81,71 +80,89 @@ $caption_text: Cera Pro, sans-serif;
 }
 
 .icon-arrow:before {
-  content: "\e902";
+  content: "\e900";
   color: #fff;
+  font-size: 38px;
 }
 .icon-arrow2:before {
-  content: "\e903";
+  content: "\e901";
+  font-size: 71px;
+  color: #202020;
+}
+.icon-car:before {
+  content: "\e902";
+  color: #fff;
+  font-size: 71px;
 }
 .icon-carnize:before {
-  content: "\e904";
+  content: "\e903";
   color: #fff;
+  font-size: 71px;
 }
 .icon-facebook:before {
-  content: "\e905";
+  content: "\e904";
   color: #d4ac89;
+  font-size: 36px;
 }
 .icon-instagram:before {
-  content: "\e906";
+  content: "\e905";
+  font-size: 36px;
+  color: #d4ac89;
 }
 .icon-left:before {
-  content: "\e907";
+  content: "\e906";
   font-size: 26px;
 }
 .icon-phone:before {
-  content: "\e908";
+  content: "\e907";
   color: #fff;
+  font-size: 64px;
 }
 .icon-podhod:before {
-  content: "\e909";
+  content: "\e908";
   color: #34447b;
   font-size: 74px;
 }
 .icon-right:before {
-  content: "\e90a";
+  content: "\e909";
   font-size: 26px;
 }
 .icon-roll:before {
-  content: "\e90b";
+  content: "\e90a";
   color: #34447b;
   font-size: 74px;
 }
 .icon-sew:before {
-  content: "\e90c";
+  content: "\e90b";
   color: #fff;
+  font-size: 71px;
 }
 .icon-sewing-machine:before {
-  content: "\e90d";
+  content: "\e90c";
   color: #34447b;
   font-size: 74px;
 }
 .icon-stirka:before {
-  content: "\e90e";
+  content: "\e90d";
   color: #fff;
+  font-size: 71px;
 }
 .icon-team:before {
-  content: "\e90f";
+  content: "\e90e";
   color: #34447b;
   font-size: 74px;
 }
-.icon-telegram1:before {
+.icon-telegram:before {
+  content: "\e90f";
+  color: #fff;
+  font-size: 70px;
+}
+.icon-viber:before {
   content: "\e910";
   color: #fff;
+  font-size: 60px;
 }
-.icon-viber1:before {
-  content: "\e911";
-  color: #fff;
-}
+
 
 * {
   box-sizing: border-box;
@@ -230,6 +247,10 @@ body {
   a::-moz-focus-inner {
     border: 0;
   }
+
+  .slick-prev:active, .slick-next:active, .slick-prev, .slick-next {
+    outline: none;
+  }
 }
 
 .list-reset {
@@ -287,135 +308,192 @@ img {
   cursor: pointer;
 }
 
+.devgen {
+  background: #202020;
+  display: flex;
+  justify-content: center;
+
+  a {
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 195.5%;
+    color: #d4ac89;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 
 
 
 /////////////////////POPUP///////////////////
 
+.mfp-close-btn-in .mfp-close {
+  color: #333;
+  top: 8px;
+  right: 3px;
+}
+
 .popup {
   background: #FFFFFF;
-  max-width: 538px;
+  max-width: 424px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   position: relative;
-  padding: 45px 0 45px 0;
+  padding: 18px 0;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 
-  form {
-    display: inline-block;
-    background: #fff;
-    padding: 0 40px 0 40px;
+  .holder {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    border: 2px solid #D4AC89;
+    padding: 33px 25px 27px 25px;
+  }
 
+  .logo {
+    max-width: 173px;
+    max-height: 55px;
+    margin-bottom: 46px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  p {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 175.5%;
     text-align: center;
+    letter-spacing: 0.055em;
+    color: #000000;
+    margin-bottom: 33px;
+  }
+
+  form {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 5px;
 
     .form-title {
-      font-family: $font_text;
+      font-family: "Lato", sans-serif;
       font-style: normal;
-      font-weight: 900;
-      font-size: 16px;
-      line-height: 24px;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 175.5%;
       text-align: center;
-      text-transform: uppercase;
-      margin-bottom: 37px;
-      color: #08203E;
+      letter-spacing: 0.055em;
+      color: #000000;
+      margin-bottom: 35px;
     }
 
     input {
-      padding: 11px 7px;
-      width: 423px;
-      display: block;
-      border: none;
-      border-bottom: 1px solid #08203E;
-      font-family: $font_text;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 18px;
-      line-height: 147.69%;
-      text-transform: uppercase;
-      color: #08203E;
-    }
+      border: 1px solid #D4AC89;
+      box-sizing: border-box;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      width: 100%;
+      height: 45px;
+      outline: none !important;
+      margin-bottom: 25px;
 
-    label {
-      font-family: $font_text;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 12px;
-      line-height: 147.69%;
-      text-transform: uppercase;
-      color: #08203E;
-      margin-bottom: 7px;
-      text-align: initial;
-      display: block;
-    }
-
-    input[type="text"] {
-      margin-bottom:24px;
-    }
-
-    input[type="tel"] {
-      margin-bottom: 38px;
-    }
-    input:focus {
-      outline: none;
-    }
-
-    textarea {
-      width: 367px;
-      height: 90px;
-      display: block;
-      font-family: "Comfortaa", sans-serif;
+      font-family: 'Lato', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 14px;
-      line-height: 21px;
-      text-transform: uppercase;
-      margin-left: auto;
-      margin-right: auto;
-      color: #2D2D2D;
-      border: 1px solid #898989;
-      border-radius: 10px;
-      padding: 16px 14px 32px 26px;
-      background: transparent;
-      margin-top: 3px;
+      line-height: 215.5%;
+      letter-spacing: 0.055em;
+      color: #202020;
+      padding: 8px 18px;
+    }
+
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: #202020;
+    }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #202020;
+    }
+    input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+      color: #202020;
+    }
+    input::placeholder, textarea::placeholder {
+      color: #202020;
     }
 
     button {
-      margin-left: auto;
-      margin-right: auto;
-      background: #ED1D24;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-      border-radius: 4px;
-      border: 2px solid #ED1D24;
-      .btn {
-        font-family: "Open Sans", sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 13px;
-        line-height: 18px;
-        letter-spacing: 0.1em;
-        text-align: center;
-        color: #FFFFFF;
-        padding: 17px 36px;
-      }
+      width: 100%;
+      height: 57px;
+      background: #D4AC89;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+      margin-top: 7px;
+      border: none;
+      outline: none !important;
+      margin-bottom: 37px;
+
       &:hover {
-        background: #fff;
-        .btn {
-          color: #ED1D24;
+        background: #E4BE9D;
+      }
+
+      .btn {
+        outline: none !important;
+        width: 100%;
+        height: 57px;
+        border-radius: 5px;
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 157%;
+        text-align: center;
+        letter-spacing: 0.055em;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          display: inline-block;
+          margin-left: 13px;
         }
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-evenly;
+
+    .circle {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #202020;
+    }
+
+    a {
+      text-decoration: none;
+
+      &:hover .circle {
+        background: #464646;
       }
     }
   }
 
   ///media
 
-  @media (max-width: 580px) {
-    padding: 45px 40px 45px 40px;
-    form {
-      padding: 20px 0 20px 0;
-      display: block;
-
-      input {
-        width: 100%;
+  @media (max-width: 380px) {
+    p {
+      br {
+        display: none;
       }
     }
   }

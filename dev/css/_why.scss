@@ -62,6 +62,11 @@
     align-items: center;
   }
 
+  .holder {
+    display: flex;
+    align-items: center;
+  }
+
   .text {
     margin-left: 28px;
     h6 {
@@ -148,7 +153,7 @@
   }
 
   .slick-prev.slick-arrow {
-    left: 37%;
+    left: 36%;
   }
 
   .slick-next {
@@ -193,5 +198,163 @@
 
   .slick-prev:active, .slick-next:active {
     color: #827676;
+  }
+
+  //media
+  @media (max-width: 1189px) {
+    .item {
+      height: 155px;
+    }
+    .icon-podhod:before, .icon-roll:before, .icon-sewing-machine:before, .icon-team:before {
+      font-size: 60px;
+    }
+    .why-slider {
+      margin-left: -230px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 80px;
+    h4, p {
+      text-align: center;
+    }
+    .item {
+      height: 140px;
+    }
+
+    .why-slider {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 40px;
+    }
+
+    .text p {
+      max-width: 100%;
+      text-align: left;
+    }
+
+    .cards {
+      margin-top: 40px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-bottom: 60px;
+
+    h4 {
+      font-size: 38px;
+      line-height: 115.5%;
+    }
+  }
+
+  @media (max-width: 660px) {
+    .item-row {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+    .why-slider {
+      width: 100%;
+
+      .image {
+        position: relative;
+        &:before {
+          content: "";
+          width: 85%;
+          height: 85%;
+          border-radius: 50%;
+          border: 2px solid #FFFFFF;
+          background: transparent;
+          position: absolute;
+          margin: auto;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+        }
+      }
+    }
+
+    .item {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 22px;
+
+      .text h6 {
+        text-align: center;
+      }
+
+      .text p {
+        max-width: 220px;
+        text-align: center;
+      }
+
+      .holder {
+        width: 312px;
+      }
+    }
+  }
+
+  @media (max-width: 598px) {
+
+    .icon-left:before, .icon-right:before {
+      font-size: 16px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 0;
+    }
+
+    .slick-prev.slick-arrow {
+      left: 34%;
+    }
+
+    .slick-next {
+      right: 34%;
+    }
+
+    .slick-prev, .slick-next {
+      bottom: -50px;
+      width: 55px;
+      height: 55px;
+      &:after {
+        height: 41px;
+        width: 41px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 26px;
+      line-height: 115.5%;
+    }
+
+    .text {
+      margin-left: 12px;
+    }
+    .item .holder {
+      width: 294px;
+    }
+  }
+
+  @media (max-width: 380px) {
+    .slick-prev.slick-arrow {
+      left: 30%;
+    }
+
+    .slick-next {
+      right: 30%;
+    }
+
+    .button {
+      .btn {
+        width: 100%;
+        padding: 12px 0;
+      }
+    }
   }
 }

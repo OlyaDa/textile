@@ -1,0 +1,135 @@
+.companies {
+  padding: 69px 0;
+
+  h4 {
+    font-family: 'Oranienbaum', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45px;
+    line-height: 146.5%;
+    text-align: center;
+    color: #202020;
+    margin-bottom: 74px;
+  }
+
+  .image {
+    margin: 0 70px;
+  }
+
+  ///slick-prev slick-next
+  .slick-prev:before, .slick-next:before {
+    font-size: 0;
+  }
+
+  .slick-prev.slick-arrow {
+    left: -30px;
+  }
+
+  .slick-next {
+    right: -30px;
+  }
+
+  .slick-prev, .slick-next {
+    top: 50%;
+    font-size: 16px;
+    line-height: 0;
+    position: absolute;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.25);
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: #202020;;
+    outline: none;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:after {
+      content: "";
+      height: 61px;
+      width: 61px;
+      border-radius: 50%;
+      background: transparent;
+      border: 1px solid #D4AC89;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+    }
+  }
+
+  .slick-prev:active, .slick-next:active {
+    color: #827676;
+  }
+
+  .companies-slider {
+    outline: none !important;
+  }
+
+  //media
+
+  @media (max-width: 1350px) {
+    .slick-prev.slick-arrow {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0;
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    h4 {
+      margin-bottom: 20px;
+    }
+
+    .slick-prev, .slick-next {
+      bottom: 23%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    h4 {
+      font-size: 38px;
+      line-height: 115.5%;
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 700px) {
+
+    .icon-left:before, .icon-right:before {
+      font-size: 16px;
+    }
+
+    .slick-prev:before, .slick-next:before {
+      font-size: 0;
+    }
+
+    .slick-prev, .slick-next {
+      width: 55px;
+      height: 55px;
+      &:after {
+        height: 41px;
+        width: 41px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    h4 {
+      font-size: 26px;
+      line-height: 115.5%;
+    }
+  }
+}
