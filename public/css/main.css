@@ -2145,6 +2145,8 @@
     border-radius: 5px;
     margin-bottom: 52px;
     position: relative; }
+    .choice .image img {
+      border-radius: 5px; }
   .choice .overlay {
     position: absolute;
     top: 0;

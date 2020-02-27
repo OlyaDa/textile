@@ -503,7 +503,7 @@
       letter-spacing: 0.055em;
       color: #FFFFFF;
       max-width: 335px;
-      padding: 16px 91px;
+      padding: 16px 90px;
       width: 100%;
       box-shadow: none !important;
       outline: none !important; }
@@ -1821,6 +1821,8 @@
     border-radius: 5px;
     margin-bottom: 52px;
     position: relative; }
+    .choice .image img {
+      border-radius: 5px; }
   .choice .overlay {
     position: absolute;
     top: 0;
